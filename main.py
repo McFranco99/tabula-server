@@ -17,5 +17,6 @@ def somma_cumulata(req: FormulaRequest):
     return {"colonna": req.colonna, "risultato": cumulato}
 
 @app.get("/")
-def read_root():
-    return {"message": "Benvenuto su Tabula!"}
+def home():
+    return {"message": "Benvenuto su Tabula Server!"}
+
